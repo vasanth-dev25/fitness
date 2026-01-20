@@ -229,7 +229,6 @@ body{
             .hero1 > h1{
                 font-size: 24px;
                 width: 90%;
-                padding-top: 20px;
             }
 
             .hero1 > p{
@@ -244,3 +243,4 @@ body{
                  padding-bottom: 10px;
             }
         }
+
