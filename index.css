@@ -80,7 +80,7 @@ body{
 }        /* HERO section start */
         .hero{
             width: 100%;
-            min-height: 100vh;
+            min-height: 80vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -99,7 +99,7 @@ body{
             font-size: 42px;
             width: 60%;
             font-weight: 100px;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .hero1 > p{
@@ -243,4 +243,5 @@ body{
                  padding-bottom: 10px;
             }
         }
+
 
