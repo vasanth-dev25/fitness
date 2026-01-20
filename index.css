@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* body */
+body{
+    font-family: "Outfit", sans-serif;
+}
+
+        nav{
+            width: 100%;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            border-bottom: 1px solid gray;
+        }
+        .nav2{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 70%;
+        }
+        .nav2 > a{
+            text-decoration: none;
+            color: #252525;
+        }
+        .nav3 > .but1{
+            border: none;
+            background-color: transparent;
+        }
+        .nav3 > .but2{
+            border: none;
+            border-radius: 12px;
+            background-color: dodgerblue;
+            color: white;
+            padding: 5px 9px;
+            margin-left: 20px;
+        }
+
+        .buts{
+            border: none;
+            background-color: transparent;
+            display: none;
+        }
+
+        /* mobile responsive for navbar */
+
+        @media screen and (min-width:320px) and (max-width:768px){
+            .buts{
+                display: unset;
+            }
+            .nav3{
+                display:none;
+            }
+        }
+        /* mobile view */
+    @media screen and (min-width:320px) and (max-width:768px){
+
+    .nav2{
+        display: none;             
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        gap: 15px;
+        border-top: 1px solid #ccc;
+        z-index: 1000;
+    }
+
+    /* when menu is opened */
+    .nav2.show{
+        display: flex;
+    }
+}        /* HERO section start */
+        .hero{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero1{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero1 > h1{
+            font-size: 42px;
+            width: 60%;
+            font-weight: 100px;
+            margin-bottom: 20px;
+        }
+
+        .hero1 > p{
+            width: 50%;
+            font-size: 14px;
+            color: #20202070;
+            margin-bottom: 20px;
+        }
+
+         .cta1{
+            padding: 12px;
+            border-radius: 26px;
+            border: 1px solid gray;
+            background-color: rgb(171, 219, 105);
+            color: #252525;
+        }
+
+        .cta2{
+            padding: 12px;
+            border-radius: 26px;
+            border: 1px solid gray;
+            background-color: black;
+            color: #fff;
+        }
+
+        .hero2{
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .cards{
+            width:100%;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            gap:15px;
+        }
+
+        .card{
+            width: 230px;
+            height: 230px;
+            border-radius: 12px;
+            border:1px solid black;
+            padding: 10px;
+            flex-shrink: 0;
+            
+        }
+        .card1{
+            background-color:rgb(253, 243, 103);
+             position:relative;
+
+        }
+        .c1img{
+            position: absolute;
+            top: 61px;
+            left: 0px;
+            width: 180px;
+        }
+        .c1but{
+            display: inline-block;
+            position: absolute;
+            bottom: 40px;
+            right: 10px;
+            padding: 13px;
+            border-radius: 26px;
+            border: 1px solid gray;
+            background-color: rgb(212, 238, 67);
+            color: #252525;
+        } 
+        .card2{
+            background-color:rgb(169, 255, 213);
+            position: relative;
+
+        }
+        .c2img{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 180px;
+
+        }
+         .c2but{
+            display: inline-block;
+            position: absolute;
+            top:30px;
+            left: 10px;
+            padding: 13px;
+            border-radius: 26px;
+            font-size: 13px;
+            border: 1px solid gray;
+            background-color: gold;
+            color: #252525;
+         }
+        .card3{
+            background-color:rgb(131, 230, 109);
+            position: relative;
+        }
+        .c3img{
+              position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 180px;
+             
+            }
+        .card3 p{
+            font-style: bold;
+        }
+
+        .card4{
+            background-color:rgb(253, 243, 103);
+            position: relative;
+        }
+        .c4but{
+            display: inline-block;
+            position: absolute;
+            top:120px;
+            left: 10px;
+            padding: 13px;
+            border-radius: 26px;
+            font-size: 13px;
+            border: 1px solid gray;
+            background-color: gold;
+            color: #252525;
+         }
+        /* mobile reponsive for hero section */
+        @media screen and (min-width:320px) and (max-width:768px){
+            .hero1 > h1{
+                font-size: 24px;
+                width: 90%;
+                padding-top: 20px;
+            }
+
+            .hero1 > p{
+                width: 90%;
+            }
+            .cards{
+                 display: flex;
+                 justify-content: flex-start;
+                 padding: 0px 15px;
+                 overflow-x: scroll;
+                 overflow-y: hidden;
+                 padding-bottom: 10px;
+            }
+        }
